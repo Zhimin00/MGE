@@ -30,14 +30,9 @@ def parse_local_args():
 
 
 def load_model(pretrained_model_name_or_path: str):
-    if pretrained_model_name_or_path.endswith(".pth"):
-        ckpt = torch.load(pretrained_model_name_or_path, map_location="cpu")
-        state_dict = {
-            k[7:] if k.startswith("module.") else k: v
-            for k, v in ckpt["model"].items()
-        }
-        model = Pi3()
-        model.load_state_dict(state_dict, strict=True)
+    if pretrained_model_name_or_path.endswith('.pth'):
+        ckpt = torch.load(pretrained_model_name_or_path)
+        model.load_state_dict(ckpt, strict=False)
         return model
     if pretrained_model_name_or_path.endswith(".safetensors"):
         from safetensors.torch import load_model as load_safetensors_model
