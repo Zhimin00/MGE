@@ -8,12 +8,12 @@ name: mv_recon
 pi3:
   pretrained_model_name_or_path: checkpoints/mgepi3.pth
 eval_datasets:
-  - NRGBD-kf200
-  - NRGBD-dense
-  - NRGBD-kf40
-  - NRGBD-kf25
-  - NRGBD-kf10
-  - NRGBD-kf3
+  # - NRGBD-kf200
+  # - NRGBD-dense
+  # - NRGBD-kf40
+  # - NRGBD-kf25
+  # - NRGBD-kf10
+  # - NRGBD-kf3
   - ETH3D
 
 no_crop: True

@@ -1,2 +1,0 @@
-sequence,anchor,clean_ids,distractor_ids,add_ids,replace_ids,mean_distractor_pose_distance,mean_distractor_visual_similarity
-facade,10,5 8 10 15 24 33 37 42 44 46 48 58 68 73,70 75,5 8 10 15 24 33 37 42 44 46 48 58 68 70 73 75,5 8 10 15 24 33 37 42 44 46 48 58 70 75,15.427544116973877,0.7883926928043365

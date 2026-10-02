@@ -26,7 +26,7 @@ def parse_local_args():
     parser = argparse.ArgumentParser(add_help=False)
     # parser.add_argument("--num-retain", type=int, default=10)
     parser.add_argument("--merge-ratio", type=float, default=0.9)
-    parser.add_argument("--merge-strategy", type=str, default="fastpi3")
+    parser.add_argument("--merge-strategy", type=str, default="aga")
     parser.add_argument("--protected-frame-ratio", type=float, default=0.1)
     parser.add_argument(
         "--anchor-selection",

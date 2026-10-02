@@ -275,13 +275,13 @@ class FlashAttentionRope(AttentionRope):
         # Token merging (same pattern as fastvggt)
         if global_merging is not None:
             # print(self.merge_strategy)
-            from fastpi3.merging.merge import token_merge_bipartite2d
+            from agapi3.merging.merge import token_merge_bipartite2d
 
             generator = torch.Generator(device=x.device)
             generator.manual_seed(33)
 
             if self.merge_strategy in {"ablation_uniform"}:
-                from fastpi3.merging.merge import token_merge_frame_protected_bipartite2d
+                from agapi3.merging.merge import token_merge_frame_protected_bipartite2d
 
                 r = int(x.shape[1] * self.merge_ratio)
                 m, u = token_merge_frame_protected_bipartite2d(
@@ -293,7 +293,7 @@ class FlashAttentionRope(AttentionRope):
                     protected_frame_ratio=self.protected_frame_ratio,
                 )
             elif self.merge_strategy in {"ablation_fixed"}:
-                from fastpi3.merging.frame_merge import (
+                from agapi3.merging.frame_merge import (
                     legacy_original_retained_token_count,
                     token_merge_frame_adaptive_global_bipartite2d,
                 )
@@ -331,7 +331,7 @@ class FlashAttentionRope(AttentionRope):
                 "aga",
                 "ablation_adaptive",
             }:
-                from fastpi3.merging.frame_merge import (
+                from agapi3.merging.frame_merge import (
                     legacy_original_retained_token_count,
                     token_merge_frame_adaptive_global_bipartite2d,
                 )
