@@ -5,7 +5,6 @@
 
 <!-- ### [Paper](https://arxiv.org/abs/2507.11539)  | [Project Page](https://wzzheng.net/StreamVGGT)  | [Online Demo](https://huggingface.co/spaces/lch01/StreamVGGT) -->
 
->Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models
 
 >Zhimin Shao, Xijun Liu, Zhaoliang Zhang, Yutao Tang, Abhay Yadav, Rama Chellappa, Cheng Peng
 
@@ -44,9 +43,9 @@ cd MGE
 conda env create -f mge.yaml
 ```
 ### Download Checkpoints
-Please download pretrained teacher model from [here](https://huggingface.co/yyfz233/Pi3/resolve/main/model.safetensors).
+Please download pretrained teacher model from [here](https://huggingface.co/yyfz233/Pi3/resolve/main/model.safetensors) and save at `ckpt/`.
 
-<!-- The checkpoint of MGE is available at both [Hugging Face](https://huggingface.co/lch01/StreamVGGT/) and [OneDrive](https://cloud.tsinghua.edu.cn/d/d6ad8f36fcd541bcb246/). -->
+The checkpoint of MGE is available at [Hugging Face](https://huggingface.co/shaozhimin/MGE). Download it and save at `checkpoints/`.
 
 ## Data Preparation
 ### Training Datasets
@@ -74,6 +73,10 @@ Our training data includes 14 datasets. Please download the datasets from their 
 cd src/
 NCCL_DEBUG=TRACE TORCH_DISTRIBUTED_DEBUG=DETAIL HYDRA_FULL_ERROR=1 accelerate launch --multi_gpu --num_processes 2 --main_process_port 26902 ./mgepi3train.py --config-name mgepi3train_stage1
 ```
+
+## Evaluation
+
+Please refer to the [evaluation README](https://github.com/Zhimin00/MGE/blob/evaluation/README.md) for evaluation setup, datasets, and instructions.
 
 ## Citation
 
