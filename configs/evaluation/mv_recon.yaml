@@ -1,0 +1,28 @@
+# @package _global_
+
+defaults:
+  - override /data: mv_recon
+
+name: mv_recon
+
+pi3:
+  pretrained_model_name_or_path: checkpoints/mgepi3.pth
+eval_datasets:
+  - NRGBD-kf200
+  - NRGBD-dense
+  - NRGBD-kf40
+  - NRGBD-kf25
+  - NRGBD-kf10
+  - NRGBD-kf3
+  - ETH3D
+
+no_crop: True
+load_img_size: 518
+
+device: cuda
+
+verbose: False
+
+seed: 42
+
+save_suffix: null

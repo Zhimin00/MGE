@@ -1,85 +1,75 @@
-<div align="center">
-<h1>Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models</h1>
-</div>
+# $\pi^3$ Evaluation
 
-
-<!-- ### [Paper](https://arxiv.org/abs/2507.11539)  | [Project Page](https://wzzheng.net/StreamVGGT)  | [Online Demo](https://huggingface.co/spaces/lch01/StreamVGGT) -->
-
->Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models
-
->Zhimin Shao, Xijun Liu, Zhaoliang Zhang, Yutao Tang, Abhay Yadav, Rama Chellappa, Cheng Peng
-
-
-## News
-
-<!-- - **[2025/7/18]** [Demo](https://huggingface.co/spaces/lch01/StreamVGGT) and [checkpoints](https://huggingface.co/lch01/StreamVGGT/) released on Hugging Face; demo code is available for local launch.
-- **[2025/7/15]** Paper released on [arXiv](https://arxiv.org/abs/2507.11539).
-- **[2025/7/14]** Release the code for **fine-tuning VGGT**.
-- **[2025/7/13]** Check out [Point3R](https://github.com/YkiWu/Point3R) for another streaming 3D reconstruction work of ours!
-- **[2025/7/13]** Distillation code for VGGT is released.
-- **[2025/7/13]** Inference code with [FlashAttention-2](https://github.com/Dao-AILab/flash-attention) is released. -->
-- **[2026/10/2]** Training/evaluation code release.
-
-
+## Get started
+```bash
+git clone https://github.com/Zhimin00/swapi3.git
+cd swapi3
+pip install -r requirements.txt
+```
 ## Overview
 
-Given a sequence of images, during training, MGE masks the global attention randomly to limit the all-to-all cross-view information flow. To promote richer intermediate feature representation, we further introduce constrain MGE to produce similar 3D features compared to the full-attention teacher encoder output.
+- [x] Monocular Depth Estimation
+- [x] Video Depth Estimation
+- [x] Relative Camera Pose Estimation
+- [x] Multi-view Reconstruction (Point Map Estimation)
 
-<img src="./assets/architecture.PNG" alt="overview" style="width: 100%;" />
+The root config file of all evaluations is `configs/eval.yaml`, however you don't need to edit it
 
-### Reconstruction Visualizations
+- All main hyperparameters you need are in `configs/evaluation/xxxxx.yaml`
+- Sometimes you may want to change the dataset config in `configs/data/xxxxx.yaml`, or the model config in `configs/model/xxxxx.yaml`
 
-<img src="./assets/vis.png" alt="overview" style="width: 100%;" />
+## Dataset Preparation
 
-
-### Installation
-
-1. Clone MGE
-```bash
-git clone https://github.com/Zhimin00/MGE.git
-cd MGE
-```
-2. Create conda environment
-```bash
-conda env create -f mge.yaml
-```
-### Download Checkpoints
-Please download pretrained teacher model from [here](https://huggingface.co/yyfz233/Pi3/resolve/main/model.safetensors).
-
-<!-- The checkpoint of MGE is available at both [Hugging Face](https://huggingface.co/lch01/StreamVGGT/) and [OneDrive](https://cloud.tsinghua.edu.cn/d/d6ad8f36fcd541bcb246/). -->
-
-## Data Preparation
-### Training Datasets
-Our training data includes 14 datasets. Please download the datasets from their official sources and refer to [CUT3R](https://github.com/CUT3R/CUT3R/blob/main/docs/preprocess.md) for processing these datasets.
-
-  - [ARKitScenes](https://github.com/apple/ARKitScenes) 
-  - [BlendedMVS](https://github.com/YoYo000/BlendedMVS)
-  - [CO3Dv2](https://github.com/facebookresearch/co3d)
-  - [MegaDepth](https://www.cs.cornell.edu/projects/megadepth/)
-  - [MVS-Synth](https://phuang17.github.io/DeepMVS/mvs-synth.html)
-  - [ScanNet++](https://kaldir.vc.in.tum.de/scannetpp/) 
-  - [ScanNet](http://www.scan-net.org/ScanNet/)
-  - [Spring](https://spring-benchmark.org/)
-  - [Hypersim](https://github.com/apple/ml-hypersim)
-  - [WildRGB-D](https://github.com/wildrgbd/wildrgbd/)
-  - [WayMo Open dataset](https://github.com/waymo-research/waymo-open-dataset)
-  - [Virtual KITTI 2](https://europe.naverlabs.com/research/computer-vision/proxy-virtual-worlds-vkitti-2/)
-  - [OmniObject3D](https://omniobject3d.github.io/)
-  - [PointOdyssey](https://pointodyssey.com/)
+Please put all evaluation datasets under `data` folder, or you can change the config in `configs/data/xxxxx.yaml`.
 
 
-## Training
+## 1. Video Depth Estimation
+
+configs in `configs/evaluation/videodepth.yaml`, see [videodepth/README.md](videodepth/README.md) for more details.
 
 ```bash
-cd src/
-NCCL_DEBUG=TRACE TORCH_DISTRIBUTED_DEBUG=DETAIL HYDRA_FULL_ERROR=1 accelerate launch --multi_gpu --num_processes 2 --main_process_port 26902 ./mgepi3train.py --config-name mgepi3train_stage1
+python videodepth/infer.py
+python videodepth/eval.py
 ```
 
-## Citation
+## 2. Relative Camera Pose Estimation
 
-If you find our work useful, please consider citing:
 
-<!-- ```bibtex
+```bash
+python relpose/eval_dist.py
+```
+
+## 3. Multi-view Reconstruction (Point Map Estimation)
+
+
+```bash
+# python mv_recon/sampling.py  # to generate seq-id-maps under datasets/seq-id-maps, which is provided in this repo
+python mv_recon/eval.py
+```
+
+For token merging inference
+
+```bash
+python mv_recon/eval_aga.py
+```
+
+## Acknowledgement
+
+Our work builds upon several fantastic open-source projects. We'd like to express our gratitude to the authors of:
+
+- [DUSt3R](https://github.com/naver/dust3r)
+- [MonST3R](https://github.com/Junyi42/monst3r)
+- [Spann3R](https://github.com/HengyiWang/spann3r)
+- [CUT3R](https://github.com/CUT3R/CUT3R)
+- [MoGe](https://github.com/microsoft/MoGe)
+- [VGGT](https://github.com/facebookresearch/vggt)
+- [FastVGGT](https://github.com/mystorm16/FastVGGT)
+
+<!-- ## Citation -->
+
+<!-- If you find our work useful, please consider citing:
+
+```bibtex
 @misc{wang2025pi3,
       title={$\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning}, 
       author={Yifan Wang and Jianjun Zhou and Haoyi Zhu and Wenzheng Chang and Yang Zhou and Zizun Li and Junyi Chen and Jiangmiao Pang and Chunhua Shen and Tong He},
@@ -92,22 +82,5 @@ If you find our work useful, please consider citing:
 ``` -->
 
 
-<!-- ## Evaluation
-
-### Evaluation Datasets
-Please refer to [MonST3R](https://github.com/Junyi42/monst3r/blob/main/data/evaluation_script.md), [Spann3R](https://github.com/HengyiWang/spann3r/blob/main/docs/data_preprocess.md) and [Pi3](https://github.com/yyfz/Pi3/blob/evaluation/datasets/preprocess/prepare_eth3d.sh) to prepare Sintel, Bonn, KITTI, NYU-v2, ScanNet, 7scenes, Neural-RGBD and ETH3D datasets.
-
-The evaluation code follows [MonST3R](https://github.com/Junyi42/monst3r/blob/main/data/evaluation_script.md), [CUT3R](https://github.com/CUT3R/CUT3R/blob/main/docs/eval.md), [VGGT](https://github.com/facebookresearch/vggt), [Pi3](https://github.com/yyfz/Pi3/tree/evaluation) and [FastVGGT](https://github.com/mystorm16/FastVGGT).
-
-```bash
-### Pointmap
-python mv_recon/eval.py
-python mv_recon/eval_fast.py
-
-### Camera Pose
-python relpose/eval_dist.py
-
-### Multi-view Depth
-python video_depth/infer.py
-python video_depth/eval.py
-``` -->
+<!-- ## License
+For academic use, this project is licensed under the 2-clause BSD License. See the [LICENSE](./LICENSE) file for details. For commercial use, please contact the authors. -->

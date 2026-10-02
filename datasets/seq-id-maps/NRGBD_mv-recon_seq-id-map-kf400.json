@@ -1,0 +1,53 @@
+{
+    "breakfast_room": [
+        0,
+        400,
+        800
+    ],
+    "complete_kitchen": [
+        0,
+        400,
+        800,
+        1200
+    ],
+    "green_room": [
+        0,
+        400,
+        800,
+        1200
+    ],
+    "grey_white_room": [
+        0,
+        400,
+        800,
+        1200
+    ],
+    "kitchen": [
+        0,
+        400,
+        800,
+        1200
+    ],
+    "morning_apartment": [
+        0,
+        400,
+        800
+    ],
+    "staircase": [
+        0,
+        400,
+        800
+    ],
+    "thin_geometry": [
+        0,
+        197,
+        394
+    ],
+    "whiteroom": [
+        0,
+        400,
+        800,
+        1200,
+        1600
+    ]
+}
