@@ -1,14 +1,11 @@
-# $\pi^3$ Evaluation
+# Evaluation
 
 ## Get started
 ```bash
-git clone https://github.com/Zhimin00/swapi3.git
-cd swapi3
 pip install -r requirements.txt
 ```
 ## Overview
 
-- [x] Monocular Depth Estimation
 - [x] Video Depth Estimation
 - [x] Relative Camera Pose Estimation
 - [x] Multi-view Reconstruction (Point Map Estimation)
@@ -51,6 +48,11 @@ For token merging inference
 
 ```bash
 python mv_recon/eval_aga.py
+```
+
+## Demo
+```bash
+python demo_gradio.py
 ```
 
 ## Acknowledgement

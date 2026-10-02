@@ -88,11 +88,7 @@ def main(hydra_cfg: DictConfig):
     # 0. create model
     if pretrained_model_name_or_path.endswith('.pth'):
         ckpt = torch.load(pretrained_model_name_or_path)
-        new_state_dict = dict()
-        for k, v in ckpt['model'].items():
-             name = k[7:] if k.startswith('module.') else k
-             new_state_dict[name] = v
-        model.load_state_dict(new_state_dict, strict=False)#True)
+        model.load_state_dict(ckpt, strict=False)#True)
     elif pretrained_model_name_or_path.endswith('.safetensors'):
         from safetensors.torch import load_model
         load_model(model, pretrained_model_name_or_path)

@@ -570,19 +570,9 @@ if __name__ == '__main__':
 
     print("Initializing and loading Pi3 model...")
     
-    # model = Pi3.from_pretrained("yyfz233/Pi3")
-    # model = Pi3()
-    # model.load_state_dict(torcdtype = torch.bfloat16h.load('ckpts/pi3.pt', weights_only=False, map_location=device))
-    pretrained_model_name_or_path = "/cis/home/zshao14/Downloads/StreamVGGT/checkpoints/SparsePi3_random_20_stage1/checkpoint-final.pth"
     model = Pi3()
-    if pretrained_model_name_or_path.endswith('.pth'):
-        ckpt = torch.load(pretrained_model_name_or_path)
-        new_state_dict = dict()
-        for k, v in ckpt['model'].items():
-             name = k[7:] if k.startswith('module.') else k
-             new_state_dict[name] = v
-        model.load_state_dict(new_state_dict, strict=True)
-    print(f"Loading pi3 from {pretrained_model_name_or_path}")
+    ckpt = torch.load("checkpoints/checkpoint.pth")
+    model.load_state_dict(ckpt, strict=False)
     model.eval()
     model = model.to(device)
 

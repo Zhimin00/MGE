@@ -6,7 +6,7 @@ defaults:
 name: relpose-distance
 
 pi3:
-  pretrained_model_name_or_path: checkpoints/mgepi3.pth
+  pretrained_model_name_or_path: checkpoints/checkpoint.pth
 
 eval_datasets:
   - sintel
