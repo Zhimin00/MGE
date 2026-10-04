@@ -172,7 +172,7 @@ class AGAPi3(nn.Module, PyTorchModelHubMixin):
 
         anchor_indices = None
         if self.merge_ratio > 0 and self.anchor_selection == "da_partition":
-            from fastpi3.merging.frame_merge import _da_partition_anchor_frames
+            from ..merging.frame_merge import _da_partition_anchor_frames
 
             frame_desc = hidden.reshape(B, N, hw, -1).mean(dim=2).mean(dim=0)
             anchor_indices = _da_partition_anchor_frames(

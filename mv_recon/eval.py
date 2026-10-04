@@ -15,8 +15,7 @@ from omegaconf import DictConfig
 import rootutils
 root = rootutils.setup_root(__file__, indicator=".project-root", pythonpath=True)
 from pi3.models.pi3 import Pi3
-from sparsepi3.models.sparsepi3 import SparsePi3
-from utils.interfaces import infer_mv_pointclouds, infer_mv_pointclouds_vggt
+from utils.interfaces import infer_mv_pointclouds
 from mv_recon.utils import umeyama, accuracy, completion
 from utils.messages import set_default_arg, write_csv
 from utils.vis_utils import save_image_grid_auto

@@ -1,9 +1,20 @@
 # Evaluation
 
 ## Get started
+
+Create the reproducible Conda environment and activate it:
+
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate pi3
 ```
+
+If the environment already exists, update it after pulling new changes:
+
+```bash
+conda env update -f environment.yml --prune
+```
+
 ## Overview
 
 - [x] Video Depth Estimation
