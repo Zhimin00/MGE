@@ -1,0 +1,150 @@
+{
+  "scene": "church_on_spilled_blood",
+  "subset_id": "subset_002",
+  "num_images": 20,
+  "num_reference_images": 15,
+  "num_doppelganger_images": 5,
+  "pose_convention": "camera_to_world",
+  "images": [
+    {
+      "index": "0",
+      "name": "0267.jpg",
+      "role": "reference",
+      "path": "images/0267.jpg",
+      "sha256": "007c877d2cc94f70c0a2c1a7eb0f88fdce87e0da6e45e1f2656431b240db482d"
+    },
+    {
+      "index": "1",
+      "name": "0000.jpg",
+      "role": "reference",
+      "path": "images/0000.jpg",
+      "sha256": "003b5ab30ed7f59f741d8456d6a865558555de411c206366eec56baf89c8e60b"
+    },
+    {
+      "index": "2",
+      "name": "0084.jpg",
+      "role": "reference",
+      "path": "images/0084.jpg",
+      "sha256": "e967a0a5c3c4d748aa9e9e5c9a1d02d93143182923bd24549893234712e3ce80"
+    },
+    {
+      "index": "3",
+      "name": "0200.jpg",
+      "role": "reference",
+      "path": "images/0200.jpg",
+      "sha256": "f2043ece58d45290623dcff34a068421f57745c3768478e2d71b6d8a56c272d3"
+    },
+    {
+      "index": "4",
+      "name": "0005.jpg",
+      "role": "reference",
+      "path": "images/0005.jpg",
+      "sha256": "960da8e872557316bb03c1805a85e7b5c2e459f02acd4c0c733672d2593f1b17"
+    },
+    {
+      "index": "5",
+      "name": "0275.jpg",
+      "role": "reference",
+      "path": "images/0275.jpg",
+      "sha256": "751853168c218ae23efe200c0043de4e40c138b6778a828b8a6f8d1c013300cc"
+    },
+    {
+      "index": "6",
+      "name": "0214.jpg",
+      "role": "reference",
+      "path": "images/0214.jpg",
+      "sha256": "efe20ed3040ab4e45758a8faa6581d3179699d321074c08d7418dbc51196961b"
+    },
+    {
+      "index": "7",
+      "name": "0230.jpg",
+      "role": "reference",
+      "path": "images/0230.jpg",
+      "sha256": "1af370bfe4de7370ba445dae5345d1f1c18451b17ffb20c4bd3c0291ecae3466"
+    },
+    {
+      "index": "8",
+      "name": "0277.jpg",
+      "role": "reference",
+      "path": "images/0277.jpg",
+      "sha256": "aac6c953da7b43a4d1f8683ca51a31e952d3cc861a0f9f76f0360e1d2e1a0eb0"
+    },
+    {
+      "index": "9",
+      "name": "0165.jpg",
+      "role": "reference",
+      "path": "images/0165.jpg",
+      "sha256": "650b1c85cc30f86d309f7e388702ca1d66a3c5eab0da03302c290643c7e7b24e"
+    },
+    {
+      "index": "10",
+      "name": "0059.jpg",
+      "role": "reference",
+      "path": "images/0059.jpg",
+      "sha256": "28c78be7f834bc899be504d81214cca914d3e209d518ab34cbb1b3dd5307101c"
+    },
+    {
+      "index": "11",
+      "name": "0014.jpg",
+      "role": "reference",
+      "path": "images/0014.jpg",
+      "sha256": "fc56cd87ed26dcbd47a483c4431b7f99e0c9b8da481e26259cd44d10e038666b"
+    },
+    {
+      "index": "12",
+      "name": "0184.jpg",
+      "role": "reference",
+      "path": "images/0184.jpg",
+      "sha256": "fa621b6def7f067d8748c243316803fcce884d6bcea9116d5b9aeeab51d5bc8f"
+    },
+    {
+      "index": "13",
+      "name": "0174.jpg",
+      "role": "reference",
+      "path": "images/0174.jpg",
+      "sha256": "ae161392b2a480b3493e12c2177955170cf3a47c284d5d57c870c0c4299cca08"
+    },
+    {
+      "index": "14",
+      "name": "0176.jpg",
+      "role": "reference",
+      "path": "images/0176.jpg",
+      "sha256": "36195970043e65aed4514f8388e26f91e3b025e71c1bc0cead54865d6f7da08b"
+    },
+    {
+      "index": "15",
+      "name": "0008.jpg",
+      "role": "doppelganger",
+      "path": "images/0008.jpg",
+      "sha256": "08a6f2b340e7db489144e8ad06b6e1e0813e01bd7fa2142da021c3efdcc32984"
+    },
+    {
+      "index": "16",
+      "name": "0046.jpg",
+      "role": "doppelganger",
+      "path": "images/0046.jpg",
+      "sha256": "dfd195824f95369b6695180ea365deaaf0db5e0bacc9e157c46d0c2f97407ef6"
+    },
+    {
+      "index": "17",
+      "name": "0100.jpg",
+      "role": "doppelganger",
+      "path": "images/0100.jpg",
+      "sha256": "fbf2e61ed4e784670c94b79aaf7059a44a3acd9b518d4aed69ff60ac6cdbadfc"
+    },
+    {
+      "index": "18",
+      "name": "0013.jpg",
+      "role": "doppelganger",
+      "path": "images/0013.jpg",
+      "sha256": "4875316909e2a8acf3a965a0da413fae8c315f82736cb3440ff52c5ca29afb9a"
+    },
+    {
+      "index": "19",
+      "name": "0261.jpg",
+      "role": "doppelganger",
+      "path": "images/0261.jpg",
+      "sha256": "c9e4c80faf3b78ca3c54813296f82398813264402ef28ef4dc15c0a5f5866e1c"
+    }
+  ]
+}

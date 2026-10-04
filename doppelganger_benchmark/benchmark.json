@@ -1,0 +1,225 @@
+{
+  "name": "heinly_doppelganger_pi3_43",
+  "num_subsets": 43,
+  "num_images_per_subset": 20,
+  "num_reference_images": 15,
+  "num_doppelganger_images": 5,
+  "pose_convention": "camera_to_world",
+  "subsets": [
+    {
+      "scene": "alexander_nevsky_cathedral",
+      "subset_id": "subset_001",
+      "path": "subsets/alexander_nevsky_cathedral/subset_001"
+    },
+    {
+      "scene": "alexander_nevsky_cathedral",
+      "subset_id": "subset_004",
+      "path": "subsets/alexander_nevsky_cathedral/subset_004"
+    },
+    {
+      "scene": "alexander_nevsky_cathedral",
+      "subset_id": "subset_010",
+      "path": "subsets/alexander_nevsky_cathedral/subset_010"
+    },
+    {
+      "scene": "alexander_nevsky_cathedral",
+      "subset_id": "subset_039",
+      "path": "subsets/alexander_nevsky_cathedral/subset_039"
+    },
+    {
+      "scene": "alexander_nevsky_cathedral",
+      "subset_id": "subset_042",
+      "path": "subsets/alexander_nevsky_cathedral/subset_042"
+    },
+    {
+      "scene": "alexander_nevsky_cathedral",
+      "subset_id": "subset_057",
+      "path": "subsets/alexander_nevsky_cathedral/subset_057"
+    },
+    {
+      "scene": "arc_de_triomphe",
+      "subset_id": "subset_001",
+      "path": "subsets/arc_de_triomphe/subset_001"
+    },
+    {
+      "scene": "arc_de_triomphe",
+      "subset_id": "subset_005",
+      "path": "subsets/arc_de_triomphe/subset_005"
+    },
+    {
+      "scene": "arc_de_triomphe",
+      "subset_id": "subset_017",
+      "path": "subsets/arc_de_triomphe/subset_017"
+    },
+    {
+      "scene": "arc_de_triomphe",
+      "subset_id": "subset_022",
+      "path": "subsets/arc_de_triomphe/subset_022"
+    },
+    {
+      "scene": "arc_de_triomphe",
+      "subset_id": "subset_041",
+      "path": "subsets/arc_de_triomphe/subset_041"
+    },
+    {
+      "scene": "arc_de_triomphe",
+      "subset_id": "dragging_001",
+      "path": "subsets/arc_de_triomphe/dragging_001"
+    },
+    {
+      "scene": "arc_de_triomphe",
+      "subset_id": "dragging_002",
+      "path": "subsets/arc_de_triomphe/dragging_002"
+    },
+    {
+      "scene": "berliner_dom",
+      "subset_id": "subset_005",
+      "path": "subsets/berliner_dom/subset_005"
+    },
+    {
+      "scene": "berliner_dom",
+      "subset_id": "subset_007",
+      "path": "subsets/berliner_dom/subset_007"
+    },
+    {
+      "scene": "berliner_dom",
+      "subset_id": "subset_008",
+      "path": "subsets/berliner_dom/subset_008"
+    },
+    {
+      "scene": "berliner_dom",
+      "subset_id": "subset_022",
+      "path": "subsets/berliner_dom/subset_022"
+    },
+    {
+      "scene": "berliner_dom",
+      "subset_id": "subset_037",
+      "path": "subsets/berliner_dom/subset_037"
+    },
+    {
+      "scene": "big_ben",
+      "subset_id": "subset_020",
+      "path": "subsets/big_ben/subset_020"
+    },
+    {
+      "scene": "big_ben",
+      "subset_id": "subset_023",
+      "path": "subsets/big_ben/subset_023"
+    },
+    {
+      "scene": "big_ben",
+      "subset_id": "subset_035",
+      "path": "subsets/big_ben/subset_035"
+    },
+    {
+      "scene": "big_ben",
+      "subset_id": "subset_039",
+      "path": "subsets/big_ben/subset_039"
+    },
+    {
+      "scene": "big_ben",
+      "subset_id": "subset_042",
+      "path": "subsets/big_ben/subset_042"
+    },
+    {
+      "scene": "big_ben",
+      "subset_id": "subset_053",
+      "path": "subsets/big_ben/subset_053"
+    },
+    {
+      "scene": "brandenburg_gate",
+      "subset_id": "subset_000",
+      "path": "subsets/brandenburg_gate/subset_000"
+    },
+    {
+      "scene": "church_on_spilled_blood",
+      "subset_id": "subset_000",
+      "path": "subsets/church_on_spilled_blood/subset_000"
+    },
+    {
+      "scene": "church_on_spilled_blood",
+      "subset_id": "subset_001",
+      "path": "subsets/church_on_spilled_blood/subset_001"
+    },
+    {
+      "scene": "church_on_spilled_blood",
+      "subset_id": "subset_002",
+      "path": "subsets/church_on_spilled_blood/subset_002"
+    },
+    {
+      "scene": "church_on_spilled_blood",
+      "subset_id": "subset_004",
+      "path": "subsets/church_on_spilled_blood/subset_004"
+    },
+    {
+      "scene": "church_on_spilled_blood",
+      "subset_id": "subset_005",
+      "path": "subsets/church_on_spilled_blood/subset_005"
+    },
+    {
+      "scene": "church_on_spilled_blood",
+      "subset_id": "dragging_003",
+      "path": "subsets/church_on_spilled_blood/dragging_003"
+    },
+    {
+      "scene": "radcliffe_camera",
+      "subset_id": "subset_009",
+      "path": "subsets/radcliffe_camera/subset_009"
+    },
+    {
+      "scene": "radcliffe_camera",
+      "subset_id": "subset_014",
+      "path": "subsets/radcliffe_camera/subset_014"
+    },
+    {
+      "scene": "radcliffe_camera",
+      "subset_id": "subset_035",
+      "path": "subsets/radcliffe_camera/subset_035"
+    },
+    {
+      "scene": "radcliffe_camera",
+      "subset_id": "subset_036",
+      "path": "subsets/radcliffe_camera/subset_036"
+    },
+    {
+      "scene": "radcliffe_camera",
+      "subset_id": "subset_043",
+      "path": "subsets/radcliffe_camera/subset_043"
+    },
+    {
+      "scene": "radcliffe_camera",
+      "subset_id": "subset_044",
+      "path": "subsets/radcliffe_camera/subset_044"
+    },
+    {
+      "scene": "ToH",
+      "subset_id": "subset_003",
+      "path": "subsets/ToH/subset_003"
+    },
+    {
+      "scene": "ToH",
+      "subset_id": "subset_008",
+      "path": "subsets/ToH/subset_008"
+    },
+    {
+      "scene": "ToH",
+      "subset_id": "subset_009",
+      "path": "subsets/ToH/subset_009"
+    },
+    {
+      "scene": "ToH",
+      "subset_id": "subset_030",
+      "path": "subsets/ToH/subset_030"
+    },
+    {
+      "scene": "ToH",
+      "subset_id": "subset_046",
+      "path": "subsets/ToH/subset_046"
+    },
+    {
+      "scene": "ToH",
+      "subset_id": "subset_053",
+      "path": "subsets/ToH/subset_053"
+    }
+  ]
+}

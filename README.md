@@ -50,6 +50,24 @@ For token merging inference
 python mv_recon/eval_aga.py
 ```
 
+## 4. Doppelganger Camera-Pose Benchmark
+
+The `doppelganger_benchmark/` directory contains 43 fixed mixed-input subsets from eight
+outdoor scenes. Evaluation scripts and camera metadata are tracked on this GitHub branch;
+the 860 input images are hosted on [Hugging Face](https://huggingface.co/shaozhimin/MGE).
+
+Download the images from the root of this repository:
+
+```bash
+pip install -U "huggingface_hub[cli]"
+hf download shaozhimin/MGE \
+  --include "doppelganger_benchmark/subsets/*/*/images/*.jpg" \
+  --local-dir .
+```
+
+See the [Doppelganger benchmark README](doppelganger_benchmark/README.md) for the dataset
+layout, Pi3 inference command, prediction format, and camera-pose evaluation protocol.
+
 ## Demo
 ```bash
 python demo_gradio.py

@@ -1,0 +1,150 @@
+{
+  "scene": "alexander_nevsky_cathedral",
+  "subset_id": "subset_039",
+  "num_images": 20,
+  "num_reference_images": 15,
+  "num_doppelganger_images": 5,
+  "pose_convention": "camera_to_world",
+  "images": [
+    {
+      "index": "0",
+      "name": "0256.jpg",
+      "role": "reference",
+      "path": "images/0256.jpg",
+      "sha256": "45a236f3d0657cb1121da522fe20cb4c4fc8f4319bd39683096b73f94054562c"
+    },
+    {
+      "index": "1",
+      "name": "0227.jpg",
+      "role": "reference",
+      "path": "images/0227.jpg",
+      "sha256": "52e57380ea22e36873c6476fa4be2c7b729101a404f831e88732f11162ec02ba"
+    },
+    {
+      "index": "2",
+      "name": "0091.jpg",
+      "role": "reference",
+      "path": "images/0091.jpg",
+      "sha256": "ab7025f41312b469e1579316bcbef5f634dc7fa4fdca3f16f22cf7cbf35abe41"
+    },
+    {
+      "index": "3",
+      "name": "0300.jpg",
+      "role": "reference",
+      "path": "images/0300.jpg",
+      "sha256": "05f2cc8f38117324307c07499fcd335c9cc83210d048ede8b0d67d71bd2fc566"
+    },
+    {
+      "index": "4",
+      "name": "0424.jpg",
+      "role": "reference",
+      "path": "images/0424.jpg",
+      "sha256": "7255eaca09f9a9cdb43e268f6e5612609cfa92e9f31090108e9b366c24c9279a"
+    },
+    {
+      "index": "5",
+      "name": "0012.jpg",
+      "role": "reference",
+      "path": "images/0012.jpg",
+      "sha256": "f5764784cb5af8d47979d8263c1cc548173e79b12f1466d02c190abc61d3979e"
+    },
+    {
+      "index": "6",
+      "name": "0230.jpg",
+      "role": "reference",
+      "path": "images/0230.jpg",
+      "sha256": "2b4ef4d01a1b7882029c7ba3b3e5a015a349b5e8098106c29b0719846c877de8"
+    },
+    {
+      "index": "7",
+      "name": "0063.jpg",
+      "role": "reference",
+      "path": "images/0063.jpg",
+      "sha256": "3dde97a09bc886a4524326927507a2cfefc655a9683ea83a6357c9f1edea54c0"
+    },
+    {
+      "index": "8",
+      "name": "0214.jpg",
+      "role": "reference",
+      "path": "images/0214.jpg",
+      "sha256": "19a10fd73229c7577f08fedb0528ba7994583f7caa24667824c5942e81443526"
+    },
+    {
+      "index": "9",
+      "name": "0086.jpg",
+      "role": "reference",
+      "path": "images/0086.jpg",
+      "sha256": "1f088a0bc4173c150eae5904a90676c4589cd498644e00b0072553e4811ec1cc"
+    },
+    {
+      "index": "10",
+      "name": "0370.jpg",
+      "role": "reference",
+      "path": "images/0370.jpg",
+      "sha256": "1f1201793aa2030c7038cb93c878184d437d7d74b3dbc3dbc07695148c8a3554"
+    },
+    {
+      "index": "11",
+      "name": "0315.jpg",
+      "role": "reference",
+      "path": "images/0315.jpg",
+      "sha256": "f6a99ffb67fddc3bf3cdbfae446cd64923a3a37b47a36bc42b1e5f10f9783b32"
+    },
+    {
+      "index": "12",
+      "name": "0372.jpg",
+      "role": "reference",
+      "path": "images/0372.jpg",
+      "sha256": "f10ba45f5b000089725c8c44e8e9cb6f63a9c22a34bab15f7f703988bf2f7230"
+    },
+    {
+      "index": "13",
+      "name": "0364.jpg",
+      "role": "reference",
+      "path": "images/0364.jpg",
+      "sha256": "1bca7a91cbd5cca3ebc760aa507a611bb11373c563dfde8f5ac4fc0d1cedfa99"
+    },
+    {
+      "index": "14",
+      "name": "0114.jpg",
+      "role": "reference",
+      "path": "images/0114.jpg",
+      "sha256": "7827d1f6605ecd963224e2e712ad102e45000498e862e5ece6984cead0fd75a6"
+    },
+    {
+      "index": "15",
+      "name": "0099.jpg",
+      "role": "doppelganger",
+      "path": "images/0099.jpg",
+      "sha256": "8f0c372544fc119f7ef43ea5a4a283df71f2f46b4e4bdf670da4d912759ee135"
+    },
+    {
+      "index": "16",
+      "name": "0135.jpg",
+      "role": "doppelganger",
+      "path": "images/0135.jpg",
+      "sha256": "2e422af89c00937ce6f34832406948314d01bb85ff8b65210b2ff67d2e293c4a"
+    },
+    {
+      "index": "17",
+      "name": "0164.jpg",
+      "role": "doppelganger",
+      "path": "images/0164.jpg",
+      "sha256": "8644cec81010f3758935a34a49f0617152f66c7640b9d8b48031b7dc4510ce29"
+    },
+    {
+      "index": "18",
+      "name": "0017.jpg",
+      "role": "doppelganger",
+      "path": "images/0017.jpg",
+      "sha256": "c264ed0b9fad907e7a25d184727066c1ca5d00baceab9f52865ae4a0c209f733"
+    },
+    {
+      "index": "19",
+      "name": "0318.jpg",
+      "role": "doppelganger",
+      "path": "images/0318.jpg",
+      "sha256": "786757a6b78c9031ce1105eac4f1b600789e05835f8f5f253e8b3bd092b3ad8a"
+    }
+  ]
+}
