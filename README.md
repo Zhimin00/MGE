@@ -9,6 +9,7 @@ pip install -r requirements.txt
 - [x] Video Depth Estimation
 - [x] Relative Camera Pose Estimation
 - [x] Multi-view Reconstruction (Point Map Estimation)
+- [x] Doppelganger Camera-Pose Benchmark
 
 The root config file of all evaluations is `configs/eval.yaml`, however you don't need to edit it
 
