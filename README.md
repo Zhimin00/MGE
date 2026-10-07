@@ -10,7 +10,7 @@
 
 
 ## News
-- **[2025/7/15]** Paper released on [arXiv](https://arxiv.org/abs/2610.06813).
+- **[2026/10/6]** Paper released on [arXiv](https://arxiv.org/abs/2610.06813).
 - **[2026/10/2]** Training/evaluation code release.
 
 
